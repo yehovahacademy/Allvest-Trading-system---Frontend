@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { getOrders } from "../services/api";
+import { getOrders } from "../Services/api";
 
 const panelClass =
   "rounded-2xl border border-slate-800 bg-slate-900/70 p-5";
