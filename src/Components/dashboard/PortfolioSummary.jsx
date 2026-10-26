@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { getPortfolio, USER_ID } from "../../Services/api";
+import { getPortfolio } from "../../Services/api";
 
 function formatMoney(value, currency = "USD") {
   return new Intl.NumberFormat("en-US", {
@@ -42,7 +42,7 @@ export default function PortfolioSummary() {
         </div>
 
         <span className="rounded-lg bg-blue-500/10 px-3 py-2 text-sm text-blue-300">
-          User #{USER_ID}
+          My Portfolio
         </span>
       </div>
 
