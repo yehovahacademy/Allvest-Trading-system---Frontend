@@ -1,7 +1,7 @@
 
-import PortfolioSummary from "../Components/dashboard/PortfolioSummary";
-import MarketOverview from "../Components/dashboard/MarketOverview";
-import RecentOrders from "../Components/dashboard/RecentOrders";
+import PortfolioSummary from "../components/dashboard/PortfolioSummary";
+import MarketOverview from "../components/dashboard/MarketOverview";
+import RecentOrders from "../components/dashboard/RecentOrders";
 
 export default function Dashboard() {
   return (

@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { getPortfolio, USER_ID } from "../../Services/api";
+import { getPortfolio, USER_ID } from "../../services/api";
 
 function formatMoney(value, currency = "USD") {
   return new Intl.NumberFormat("en-US", {

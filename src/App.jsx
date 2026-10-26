@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./Components/Layout/Navbar";
-import Footer from "./Components/Layout/Footer";
+import Navbar from "./components/Layout/Navbar";
+import Footer from "./components/Layout/Footer";
 
 import Dashboard from "./Pages/Dashboard";
 import Market from "./Pages/Market";        // ← Fixed (file is Market.jsx)

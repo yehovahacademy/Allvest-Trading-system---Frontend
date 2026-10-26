@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { getStocks } from "../../Services/api";
+import { getStocks } from "../../services/api";
 
 export default function MarketOverview() {
   const [stocks, setStocks] = useState([]);

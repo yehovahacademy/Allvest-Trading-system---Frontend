@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { getOrders } from "../../Services/api";
+import { getOrders } from "../../services/api";
 
 export default function RecentOrders() {
   const [orders, setOrders] = useState([]);

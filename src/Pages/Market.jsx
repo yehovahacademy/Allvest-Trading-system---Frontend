@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useId, useState } from "react";
-import { getStocks, getStockQuote, placeOrder } from "../Services/api";
+import { getStocks, getStockQuote, placeOrder } from "../services/api";
 
 /* -------------------------------------------------------------------------- */
 /* Constants & utilities                                                      */
