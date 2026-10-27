@@ -11,6 +11,7 @@ import {
 import Navbar from "./Components/Layout/Navbar";
 import Footer from "./Components/Layout/Footer";
 
+import IntroPage from "./Pages/IntroPage";
 import Dashboard from "./Pages/Dashboard";
 import Market from "./Pages/Market";
 import Portfolio from "./Pages/Portfolio";
@@ -100,7 +101,7 @@ function AppContent() {
       return;
     }
 
-    navigate("/login", { replace: true });
+    navigate("/", { replace: true });
   };
 
   if (checkingSession) {
@@ -113,6 +114,19 @@ function AppContent() {
 
   return (
     <Routes>
+      {/* Public welcome page; authenticated users go to dashboard */}
+      <Route
+        path="/"
+        element={
+          session ? (
+            <TradingApp onLogout={handleLogout} />
+          ) : (
+            <IntroPage />
+          )
+        }
+      />
+
+      {/* Existing authentication pages */}
       <Route
         path="/login"
         element={
@@ -139,6 +153,7 @@ function AppContent() {
         }
       />
 
+      {/* Protect all other trading routes */}
       <Route
         path="/*"
         element={
